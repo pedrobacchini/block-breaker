@@ -63,8 +63,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: 1234567890
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: aa39933055a4443ffb3f6daa3aea3c92, type: 2}
@@ -221,8 +219,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: 2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: aa39933055a4443ffb3f6daa3aea3c92, type: 2}
@@ -379,8 +375,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: d9d03134db3244bb6abcc5bef251b716, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -432,15 +426,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 4323414880469917965}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cc8e2d4a35c14284a019583d9be2472, type: 3}
+  m_Script: {fileID: 11500000, guid: f6b218ad50256c243ae851f2fe6bb87c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameSpeed: 5
+  gameSpeed: 1
   pointsPerBlockDestroyed: 80
   scoreText: {fileID: 4323414880357018274}
   velocityText: {fileID: 844348071}
   livesText: {fileID: 1392186949}
-  autoPlay: 1
+  autoPlay: 0
 --- !u!1001 &4323414880162268883
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -448,6 +442,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4323414880469917964}
     m_Modifications:
+    - target: {fileID: 887401583, guid: 707d03782170842c980353063f0ac5a6, type: 3}
+      propertyPath: m_Name
+      value: Score Text
+      objectReference: {fileID: 0}
+    - target: {fileID: 887401584, guid: 707d03782170842c980353063f0ac5a6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -120.99994
+      objectReference: {fileID: 0}
     - target: {fileID: 3098013366737257240, guid: 707d03782170842c980353063f0ac5a6,
         type: 3}
       propertyPath: m_Name
@@ -557,14 +559,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 887401583, guid: 707d03782170842c980353063f0ac5a6, type: 3}
-      propertyPath: m_Name
-      value: Score Text
-      objectReference: {fileID: 0}
-    - target: {fileID: 887401584, guid: 707d03782170842c980353063f0ac5a6, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -120.99994
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 707d03782170842c980353063f0ac5a6, type: 3}
