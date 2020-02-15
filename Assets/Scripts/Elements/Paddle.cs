@@ -13,7 +13,7 @@ public class Paddle : MonoBehaviour
     }
 
     // Update is called once per frame
-    private void Update()
+    private void FixedUpdate()
     {
         var paddleXPos = Mathf.Clamp(GetXPos(), 1, screenWidthInUnits - 1);
         transform.position = new Vector2(paddleXPos, transform.localPosition.y);

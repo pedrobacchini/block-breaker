@@ -13,33 +13,15 @@ MonoBehaviour:
   m_Name: Game Session
   m_EditorClassIdentifier: 
   serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
+    SerializedFormat: 0
+    SerializedBytes: 01010d0000005f00630075007200720065006e007400530063006f00720065002f00000000012000000055006e006900520078002e0049006e00740052006500610063007400690076006500500072006f00700065007200740079002c00200055006e0069005200780000000000170105000000760061006c0075006500f00000000501010d0000005f00630075007200720065006e0074004c006900760065007300300000000001000000170105000000760061006c00750065000100000005
     ReferencedUnityObjects: []
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
-    SerializationNodes:
-    - Name: _currentScore
-      Entry: 7
-      Data: 0|UniRx.IntReactiveProperty, UniRx
-    - Name: value
-      Entry: 3
-      Data: 160
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: _currentLives
-      Entry: 7
-      Data: 1|UniRx.IntReactiveProperty, UniRx
-    - Name: value
-      Entry: 3
-      Data: 0
-    - Name: 
-      Entry: 8
-      Data: 
+    SerializationNodes: []
   controlType: 0
   gameSpeed: 1
-  paddleSpeed: 15
+  paddleSpeed: 20
   pointsPerBlockDestroyed: 80
