@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5f65ce0fde138742a85ba4d20ac5f24, type: 3}
+  m_Name: LevelData 1
+  m_EditorClassIdentifier: 
+  name: Level 1
+  background: {fileID: 21300000, guid: a43f3b235dc184b4799f8c8f56a94191, type: 3}
+  color: {r: 0.98039216, g: 0.98039216, b: 0.23529412, a: 1}
+  blocksPrefab: {fileID: 6873954372668157848, guid: 9e9167550a7954a41bb91753fae47828,
+    type: 3}

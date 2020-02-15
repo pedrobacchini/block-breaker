@@ -3,7 +3,6 @@
 public class Ball : MonoBehaviour
 {
     // Configure parameters
-    [SerializeField] private Paddle paddle = null;
     [SerializeField] private float xPush = 2f;
     [SerializeField] private float yPush = 15f;
     [SerializeField] private AudioClip[] ballSounds = null;
@@ -17,12 +16,14 @@ public class Ball : MonoBehaviour
     private Rigidbody2D _rigidbody2D;
     private AudioSource _audioSource;
     private GameSession _gameSession;
+    private PaddleControl paddle = null;
 
     private void Start()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _audioSource = GetComponent<AudioSource>();
         _gameSession = FindObjectOfType<GameSession>();
+        paddle = FindObjectOfType<PaddleControl>();
 
         _gameSession.UpdateVelocity(_rigidbody2D.velocity.magnitude);
         _paddleToBallVector = transform.position - paddle.transform.position;
@@ -37,9 +38,11 @@ public class Ball : MonoBehaviour
 
     private void LaunchOnMouseClick()
     {
-        if (!Input.GetMouseButtonDown(0)) return;
-        _rigidbody2D.velocity = new Vector2(xPush, yPush);
-        _hasStarted = true;
+        if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
+        {
+            _rigidbody2D.velocity = new Vector2(xPush, yPush);
+            _hasStarted = true;
+        }
     }
 
     private void LockBallToPaddle()

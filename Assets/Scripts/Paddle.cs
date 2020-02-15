@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Paddle : MonoBehaviour
 {
@@ -20,6 +19,15 @@ public class Paddle : MonoBehaviour
     {
         var paddleXPos = Mathf.Clamp(GetXPos(), 1, screenWidthInUnits - 1);
         transform.position = new Vector2(paddleXPos, transform.localPosition.y);
+
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            Debug.Log("move for left");
+        }
+        else if (Input.GetKeyDown(KeyCode.D))
+        {
+            Debug.Log("move for right");
+        }
     }
 
     private float GetXPos()

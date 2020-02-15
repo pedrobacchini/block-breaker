@@ -2,6 +2,8 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
+
 public class GameSession : MonoBehaviour
 {
     // Configure parameters
@@ -19,6 +21,7 @@ public class GameSession : MonoBehaviour
     // Singleton DontDestroyOnLoad
     private void Awake()
     {
+
         if (FindObjectsOfType<GameSession>().Length > 1)
         {
             DestroyImmediate(gameObject);

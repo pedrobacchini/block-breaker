@@ -22,4 +22,18 @@ public class SceneLoader : MonoBehaviour
         if (_gameSession != null)
             _gameSession.ResetGame();
     }
+
+    #region BUTTON_METHODS
+
+    public void LoadScene(string name)
+    {
+        SceneManager.LoadScene(name);
+    }
+
+    public void LoadScene(int index)
+    {
+        SceneManager.LoadScene(index);
+    }
+
+    #endregion
 }
