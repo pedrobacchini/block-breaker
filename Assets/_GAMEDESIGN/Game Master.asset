@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6b218ad50256c243ae851f2fe6bb87c, type: 3}
+  m_Name: Game Master
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 11400000, guid: 49306dcf5cb65af478b3d7b738fc25cf, type: 2}
+    - {fileID: 11400000, guid: 0a4102dea03412946874f8a1d10dfb19, type: 2}
+    - {fileID: 11400000, guid: 929c76f4d862c8e48a5985a3ed0e583d, type: 2}
+    - {fileID: 11400000, guid: 83970c898726d7f45ad03b70f013a1bf, type: 2}
+    - {fileID: 11400000, guid: e160d3c2cc3ff2545ae2cca4948f6e9b, type: 2}
+    - {fileID: 11400000, guid: de9fe44a5c772c8449a12958af3e4d66, type: 2}
+    - {fileID: 11400000, guid: 23db5d386ab6e5c41b748a5155e6a85f, type: 2}
+    - {fileID: 11400000, guid: 1f4628c8223c3104183bd483ddf54569, type: 2}
+    - {fileID: 11400000, guid: 2bd6c0c439051cf47ac0e4d0dddd4ef3, type: 2}
+    - {fileID: 11400000, guid: c985f15e15cdfd04790d2a75755b480a, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: _currentScore
+      Entry: 7
+      Data: 0|UniRx.IntReactiveProperty, UniRx
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _currentLives
+      Entry: 7
+      Data: 1|UniRx.IntReactiveProperty, UniRx
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _currentIndexLevel
+      Entry: 3
+      Data: 0
+    - Name: _levels
+      Entry: 7
+      Data: 2|System.Collections.Generic.List`1[[LevelScriptableObject, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 10
+    - Name: 
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 2
+    - Name: 
+      Entry: 10
+      Data: 3
+    - Name: 
+      Entry: 10
+      Data: 4
+    - Name: 
+      Entry: 10
+      Data: 5
+    - Name: 
+      Entry: 10
+      Data: 6
+    - Name: 
+      Entry: 10
+      Data: 7
+    - Name: 
+      Entry: 10
+      Data: 8
+    - Name: 
+      Entry: 10
+      Data: 9
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  controlType: 0
+  gameSpeed: 3.1
+  paddleSpeed: 20
+  pointsPerBlockDestroyed: 80

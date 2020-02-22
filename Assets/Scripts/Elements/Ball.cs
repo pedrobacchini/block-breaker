@@ -10,6 +10,7 @@ public class Ball : MonoBehaviour
     [SerializeField] private float yPush = 15f;
     [SerializeField] private AudioClip[] ballSounds = null;
     [SerializeField] private float randomFactor = 0.2f;
+    [SerializeField] private Paddle paddle;
 
     // State variables
     private Vector3 _paddleToBallVector;
@@ -18,8 +19,7 @@ public class Ball : MonoBehaviour
     // Cached component references
     private Rigidbody2D _rigidbody2D;
     private AudioSource _audioSource;
-    private Paddle paddle = null;
-    
+
     [OdinSerialize] [ReadOnly] private FloatReactiveProperty _currentVelocity = new FloatReactiveProperty(0);
     public FloatReactiveProperty CurrentVelocity => _currentVelocity;
 
@@ -27,8 +27,6 @@ public class Ball : MonoBehaviour
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _audioSource = GetComponent<AudioSource>();
-        paddle = FindObjectOfType<Paddle>();
-
         _paddleToBallVector = transform.position - paddle.transform.position;
     }
 

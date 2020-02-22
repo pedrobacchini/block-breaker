@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class Level : MonoBehaviour
 {
@@ -9,7 +10,12 @@ public class Level : MonoBehaviour
     {
         Cursor.visible = false;
     }
-    
+
+    private void Start()
+    {
+        Instantiate(GameMaster.Instance.CurrentLevel.blocksPrefab, Vector3.zero, Quaternion.identity);
+    }
+
     private void Update()
     {
         Time.timeScale = GameMaster.Instance.gameSpeed;

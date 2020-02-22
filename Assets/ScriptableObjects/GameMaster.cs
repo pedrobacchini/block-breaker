@@ -1,4 +1,5 @@
-﻿using JetBrains.Annotations;
+﻿using System.Collections.Generic;
+using JetBrains.Annotations;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using UniRx;
@@ -28,6 +29,10 @@ public class GameMaster : SingletonScriptableObject<GameMaster>
     [OdinSerialize] [ReadOnly] private IntReactiveProperty _currentLives = new IntReactiveProperty(0);
     public static ReactiveProperty<int> CurrentLives => Instance._currentLives;
 
+    [OdinSerialize] [ReadOnly] private int _currentIndexLevel = 0;
+    [OdinSerialize] private List<LevelScriptableObject> _levels = new List<LevelScriptableObject>();
+    public LevelScriptableObject CurrentLevel => _levels[_currentIndexLevel]; 
+
     public void AddToScore()
     {
         _currentScore.Value += pointsPerBlockDestroyed;
@@ -54,7 +59,8 @@ public class GameMaster : SingletonScriptableObject<GameMaster>
 
     public void LoadNextScene()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        _currentIndexLevel++;
+        SceneManager.LoadScene(SceneManager.sceneCount);
     }
 
     [UsedImplicitly]
@@ -85,6 +91,7 @@ public class GameMaster : SingletonScriptableObject<GameMaster>
 
     private void ResetGame()
     {
+        _currentIndexLevel = 0;
         _currentScore.Value = 0;
         _currentLives.Value = 0;
     }

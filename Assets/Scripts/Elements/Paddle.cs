@@ -4,13 +4,7 @@ using UnityEngine;
 public class Paddle : MonoBehaviour
 {
     [SerializeField] private int screenWidthInUnits = 16;
-
-    private Ball _ball;
-
-    private void Start()
-    {
-        _ball = FindObjectOfType<Ball>();
-    }
+    [SerializeField] private Ball ball;
 
     // Update is called once per frame
     private void FixedUpdate()
@@ -36,7 +30,7 @@ public class Paddle : MonoBehaviour
 
     private float GetBallPosition()
     {
-        return _ball.transform.position.x;
+        return ball.transform.position.x;
     }
 
     private float GetMousePosInUnits()
